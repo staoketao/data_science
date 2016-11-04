@@ -1,0 +1,128 @@
+Simulate a bivariate normal  
+Two-sample hypothesis testing, GLM, multicollinearity, experimental design, Bayes Theorem  
+suppose you have 500 search algorithm, how to compare them?  
+Performance of two ads. How to measure and compare the performance of two ads, possible reasons for the difference, and how to design new ads to support such reasons.
+
+Suppose N students participate in a coin flip experiment, when they get heads they stop, when they get tails they keep going. All students will stop after the second trial no matter the results. Y is the binary indicator of whether they claim they cheated in the experiment. Estimate how many students cheat in this experiment.  
+
+To compare two ads displayed in two places on a webpage.  
+if confidence interval of two groups is [-10,-8] how would you explain it  
+How to deal with 1 million possible factors that may affect revenues, how large the data should be? And then two questions related to linear regression and logistic regression, respectively. 
+
+Count the number of A's friends' friends who are also A's friends.
+
+You observe a sample of measurements coming from a fixed length ruler. If the object is shorter than the ruler you observe the actual measurement. Otherwise you observe the length of the ruler. What would be a good estimator of the ruler length?  
+
+derive variance of a distribution  
+How to correct for random clicks in a web survey  
+Estimators for medians  
+
+A question about the best unbiased estimator for count data in two variables from the same population  
+
+What´s the change in mean value for two samples given the mean of one sample.  
+Ask about GLM, how to deal with large number of variables, economic experiments  
+
+
+有一个方块，四点坐标分别是(0,0), (A,0), (0,B), (A,B)。方块内有一波浪线，线下的点都是logical value True，线上的点都是False。问线下的面积和其他的followup question。
+我用的monte Carlo，但是听领导说用数学方法会更容易？数学不好，只能想到monte Carlo simulation。。。
+2. A/B test
+3. logistic regression on basketball player, predicting whether put into Hall of fame
+
+举几个用R处理大数据的例子，和用R处理大数据时，遇到的困难。
+
+
+
+统计PHD, 先上干货
+(1) 白男
+a.先假设美国一个家庭里孩子数是x,给了x=0,1,2,3,4,>4的概率, (x>4的概率是0).然
+后说从一堆孩子里任意sample了一个女孩,求这个女孩至少有一个姐妹的概率
+b.给了一个data, 要求build一个model,open end没有答案
+
+(2) 白男
+a.写个程序simulate roll一个die, fair die? any die? 不止6面的die?
+b.写个简单sql
+c.一个超市有很多receipt,每个receipt有总价,有买了啥东西,但是超市把每个东西的
+单价弄丢了,怎么算单价
+
+(3)国女
+a.说research
+b.2组search query result, 怎么设计一个distance function 来比较相似度
+c.类似第一个人的问题,假设一个人随机打电话给美国的一个人 来问household size,
+这样有什么bias,然后问 如果打了3个电话 一个人说1个 一个人说2个 一个人说3个 要
+估计unbiased est.
+
+(4)三哥
+a. 解释logistic regression
+b. 给了个scatter plot要求build model，要求mlr
+
+(5)国男
+a. 行为问题
+b. 一个广告，给了10个人看，1个人点了，点击率怎么估计，可性度怎么估计
+c. 2个广告，怎么比较点击率
+d. 怎么从一个圆里sample点
+
+1. flipping 10 coins (assuming they are identical), observed 6 heads. Are
+these coins fair or not? 
+
+
+2.  What is type 1 error, what is power, what is the relation between them?
+
+3. [survival] how would you model the number of years some patients would 
+survive after a
+primary surgery, given their family history, demographic covariates (age etc
+). How to do 
+diagnostics? 
+
+4. Given a sample of size n, how do you obtain the 95% confidence interval 
+for the median？
+Two cases: 1) n is big, say  n>100   2) n is small, e.g., less than 10.
+1. suppose four colors are there, we did a survey. People (n) choose 
+different colors (red, green, yellow, blue).
+we get the proportion of people who use red as x1/n.
+What is the accuracy for this?
+2. Imaging now that we know from prior studies that a certain proportion of 
+users responds to questions randomly. How can we assess this proportion of "
+random clickers"? 
+
+第一题就是用large sample proportion算一个confidence interval.
+第二题让你估计proportion of "random clickers"。问题是都是混在一起做survey的
+，一个极端的例子是所有人都是random clickers，你也没法估计啊。 
+http://www.mitbbs.com/article_t/JobHunting/33118587.html
+
+2.问有一个超级大的dataset，应该怎么选variable。。
+3.问simple random sampling和stratified random sampling有什么区别，什么时候会用。。
+4.Share了楼主一个google doc，上面是一个case study，简而言之就是你看我们家会有这些这些广告，那我怎么才能知道大家对这个广告满不满意。。然后楼主完全是胡扯了一大堆。。
+5. 问了一个怎么建立logistics regression的问题。。
+
+sql partition by
+If an egg is dropped from above that floor, it will break. If it is dropped from that floor or below, it will be completely undamaged and you can drop the egg again.
+
+Given two eggs, find the highest floor an egg can be dropped from without breaking, with as few drops as possible.
+
+1. bayes thm. 算p(disease | positive)
+2. 3 个温度计 前两个var ＝1 最后一个 var ＝2，怎么测量oven温度。如果最后一个var ＝0.05 呢？
+3. 下雨的概率是p，cost function： ＝k 如果被淋湿，＝2 带了伞没下雨，＝1 带了伞下雨。 怎么决定带不带伞。
+
+linear regression， penalized linear regression， feature selection，clustering algorithm
+
+第二轮：问了更多更细的linear regression （类似于Seber and Lee的Linear Regression Analysis上的题）， 以及Big Data下的linear regression应该如何solve approximately，还问了各种用来compare mean的hypothesis testing是怎么来的， 不同情况下怎么用。
+第三轮：继续linear regression， 如果各种assumption violate了怎么办，有哪些robust estimator。以及出了一道open ended的应用题，关于Ads的A/B test。
+
+1. 假设一个文件从storage的提取有0.1的可能0.1秒完成，0.4的可能1秒完成，问如果当用户提取文件的时候是随机从三份备份中选择一份，问消耗时间的概率分布是怎样的，而且要用r写出来。.鐣欏璁哄潧-涓€浜�-涓夊垎鍦�
+一直以为会是类似投硬币的问题，于是跟面试官吵吵了十分钟才弄清这是个原始概型是怎么样的，大概是我理解能力太差。
+
+2.云存储每天要存入大量的文件，我们有很多硬盘，希望存储文件的数量能够尽量均匀。问需要什么statistic能知道我们的算法确实work了--大概就是文件数足够均匀
+楼主答了随机抽取一部分硬盘计算新文件数的分布75%quantile，中位数之类的，看如果两者差的不多就是算法work了，感觉这一问姑且是答对了
+然后，面试官手画了一个图，大概是这样：
+       |. 鐣欏鐢宠璁哄潧-涓€浜╀笁鍒嗗湴
+1500|^^^^^^^^^^^^ 95%quant
+       |
+  900|^^^^^^^^^^^^median
+
+
+面试官问有这样一个图是否能知道算法是否work了，我说我还需要看standard error, 否则不能确定，后来想想左面的1500和900差的实在很多，这个图基本可以说明算法出了问题。这两个题目说完时间就到了于是就结束了。
+
+白人第一个问题 有关conditional probability， 给了一个talble 让算一个家里有sister的概率
+
+http://ai.stanford.edu/~ronnyk/2009controlledExperimentsOnTheWebSurvey.pdf
+
